@@ -1,0 +1,15 @@
+{
+  "name": "s4_improved_development",
+  "version": "1.0.0",
+  "description": "node project for learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "swapnilchaware",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

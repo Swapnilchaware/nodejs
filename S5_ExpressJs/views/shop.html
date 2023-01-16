@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .main-header {
+            width: 100%;
+            background-color: rgb(247, 201, 0);
+            height: 3rem;
+
+        }
+
+        .main-header__nav {
+            height: 100%;
+        }
+
+        .main-header__list-items {
+            margin: 0;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        .main-header__items {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        .main-header__items a{
+            text-decoration: none;
+            color: white;
+            font-style: 'san-serif';
+        }
+
+        .main-header__items a:hover,
+        .main-header__items a:active {
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__list-items">
+                <li class="main-header__items"><a href="/shop">Shop</a></li>
+                <li class="main-header__items"><a href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Shopping</h1>
+        <h3>List of items.........</h3>
+    </main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .main-header {
+            width: 100%;
+            background-color: rgb(247, 201, 0);
+            height: 3rem;
+
+        }
+
+        .main-header__nav {
+            height: 100%;
+        }
+
+        .main-header__list-items {
+            margin: 0;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        .main-header__items {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        .main-header__items a{
+            text-decoration: none;
+            color: white;
+            font-style: 'san-serif';
+        }
+
+        .main-header__items a:hover,
+        .main-header__items a:active {
+            color: blue;
+        }
+
+        main {
+            margin: 4rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-form {
+            width: 80%;
+        }
+
+        .product-form__title {
+            font-size: large;
+        }
+
+        .product-form__title-input {
+            border: 2px solid black;
+            color: black;
+            height: 1rem;
+            margin: 1rem 0;
+           
+        }
+
+        .product-form__submit {
+            width: 5rem;
+            border:none;
+            padding: 1rem;
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__list-items">
+                <li class="main-header__items"><a href="/shop">Shop</a></li>
+                <li class="main-header__items"><a href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="product-form" action="/admin/product" method="POST">
+            <label class="product-form__title" for="title">Title</label>
+            <input class="product-form__title-input" type="text" name="title" id="">
+            <br>
+            <button class="product-form__submit" type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+</html>
