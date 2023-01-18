@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add user</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: aqua;
+        }
+
+        ul {
+            display: flex;
+            justify-content: start;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="/">List User</a></li>
+                <li> <a href="/add-user">Add User</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    
+        <% if (user.length !== 0) {
+                for (let u=0;u<user.length;u++) {  
+            %>
+            <h2>  <% user[u] %> </h2>
+
+
+            
+
+
+        <%}} else {%>
+            <h2>No users</h2>
+        <% }%>
+
+    </section>
+</body>
+</html>
